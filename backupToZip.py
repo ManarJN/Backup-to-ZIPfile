@@ -86,7 +86,6 @@ def backupToZip(folder, zipLocation, ext, days):
     now = datetime.now()  
     logging.info('Done at ' + str(now.strftime('%Y%m%d_%H%M%S')) + '\n\n')
     logging.shutdown()
-
 # end of backupToZip
 	
 	
