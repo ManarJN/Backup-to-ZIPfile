@@ -49,7 +49,7 @@ def backupToZip(folder, zipLocation, ext, days):
     backupZip = zipfile.ZipFile(os.path.join(zipLocation, zipFilename), 'w')
 
 	
-	# walks the entire folder tree and compresses the files in each folder
+    # walks the entire folder tree and compresses the files in each folder
     logging.info('Backing up files...')
     for foldername, subfolders, filenames in os.walk(folder):
         # adds the current folder to the ZIP file
@@ -82,7 +82,7 @@ def backupToZip(folder, zipLocation, ext, days):
         logging.info('  - No old files found.')
    
    
-	# ends logger
+    # ends logger
     now = datetime.now()  
     logging.info('Done at ' + str(now.strftime('%Y%m%d_%H%M%S')) + '\n\n')
     logging.shutdown()
